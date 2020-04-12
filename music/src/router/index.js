@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-04-10 11:15:26
- * @LastEditTime: 2020-04-11 14:46:12
+ * @LastEditTime: 2020-04-12 11:27:44
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vscodesc:\Users\xswl\Desktop\VUEX (2)\music\src\router\index.js
@@ -31,6 +31,21 @@ const routes = [
     path: '/playlists/:id',
     name: 'playlists',
     component: () => import(/* webpackChunkName: "about" */ '../views/playlists.vue')
+  },
+  {
+    path: '/singer',
+    name: 'singx',
+    component: () => import(/* webpackChunkName: "about" */ '../views/singer.vue')
+  },
+  {
+    path: '/models/:id',
+    name: 'models',
+    component: () => import(/* webpackChunkName: "about" */ '../views/models.vue')
+  },
+  {
+    path:'/ranking',
+    name:'ranking',
+    component:()=>import('../views/ranking.vue')
   }
 ];
 

@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-04-10 11:15:26
- * @LastEditTime: 2020-04-11 12:20:09
+ * @LastEditTime: 2020-04-12 11:28:46
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vscodesc:\Users\xswl\Desktop\VUEX (2)\music\src\views\Home.vue
@@ -13,17 +13,17 @@
       <div class="listx">
         <ul>
           <li>
-            <router-link to='/'>
+            <router-link :to="{name:'singx'}">
               <p><img src='./../assets/经理.png' /><span>歌手</span></p>
             </router-link>
           </li>
            <li>
-            <router-link to='/'>
+            <router-link :to="{name:'ranking'}">
               <p><img src='./../assets/排行榜.png' /><span>排行榜</span></p>
             </router-link>
           </li>
            <li>
-            <router-link to='/'>
+            <router-link :to="{name:'/'}">
               <p><img src='./../assets/电台.png' /><span>电台</span></p>
             </router-link>
           </li>
