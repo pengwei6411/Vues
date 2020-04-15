@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-04-10 11:15:26
- * @LastEditTime: 2020-04-11 14:57:15
+ * @LastEditTime: 2020-04-13 21:06:25
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vscodesc:\Users\xswl\Desktop\VUEX (2)\music\src\App.vue
@@ -45,6 +45,7 @@ export default {
   components:{
     heads
   },
+
   methods:{
     stop(){
         this.play();
@@ -53,7 +54,7 @@ export default {
     play() {
           this.isPlay = true
           // 清空mv的信息
-          this.musicurl = ''
+         
         }
   }
 }

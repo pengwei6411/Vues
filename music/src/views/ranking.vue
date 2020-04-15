@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-04-12 11:11:52
- * @LastEditTime: 2020-04-12 11:44:34
+ * @LastEditTime: 2020-04-13 20:09:39
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vscodesc:\Users\xswl\Desktop\VUEX (2)\music\src\views\ranking.vue
@@ -23,6 +23,8 @@
                 </p>
             </router-link>
         </div>
+
+        <audio ref='audio' autoplay='autoplay' :src="musicurl" ></audio>
   </div>
 </template>
 
@@ -32,7 +34,8 @@ export default {
 name:'ranking',
 data:()=>({
     title:'歌手排行榜',
-    music:[]
+    music:[],
+    musicurl:''
 }),
 components:{
     headx
@@ -50,7 +53,9 @@ created(){
     })
     .catch(err => {
         console.error(err); 
-    })
+    }),
+      this.musicurl=window.localStorage.getItem('url');
+
 }
 }
 </script>

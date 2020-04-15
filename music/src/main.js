@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-04-10 11:15:26
- * @LastEditTime: 2020-04-10 21:19:38
+ * @LastEditTime: 2020-04-13 19:43:15
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vscodesc:\Users\xswl\Desktop\VUEX (2)\music\src\main.js
@@ -24,3 +24,4 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount('#app');
+

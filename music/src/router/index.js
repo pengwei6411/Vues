@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-04-10 11:15:26
- * @LastEditTime: 2020-04-12 11:27:44
+ * @LastEditTime: 2020-04-13 20:06:04
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vscodesc:\Users\xswl\Desktop\VUEX (2)\music\src\router\index.js
@@ -21,11 +21,6 @@ const routes = [
     meta:{
       musicurl:null
     }
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
     path: '/playlists/:id',

@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-04-10 11:15:26
- * @LastEditTime: 2020-04-12 11:28:46
+ * @LastEditTime: 2020-04-13 20:03:31
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vscodesc:\Users\xswl\Desktop\VUEX (2)\music\src\views\Home.vue
@@ -29,7 +29,7 @@
           </li>
         </ul>
       </div>
-
+       <audio ref='audio' autoplay='autoplay' :src="musicurl"></audio>
       <div class="conster">
 
         <div class="list">
@@ -58,7 +58,8 @@ export default {
   data:()=>({
     value:'',
     copywriter:'',
-    playlists:[]
+    playlists:[],
+    musicurl:''
   }),
   methods:{
     con(){
@@ -73,7 +74,9 @@ export default {
     })
     .catch(err => {
       console.error("获取失败"); 
-    })
+    }),
+    this.musicurl=window.localStorage.getItem('url');
+    console.log(this.musicurl);
   }
 }
 </script>

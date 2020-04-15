@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-04-10 21:40:55
- * @LastEditTime: 2020-04-11 15:11:55
+ * @LastEditTime: 2020-04-13 20:08:33
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vscodesc:\Users\xswl\Desktop\VUEX (2)\music\src\views\playlists.vue
@@ -70,6 +70,7 @@ export default {
                   window.alert("万分抱歉，这首歌暂无版权,我们会尽快补充,请原谅")
               }else{
                     this.musicurl=res.data.data[0].url;
+                    window.localStorage.setItem('url',res.data.data[0].url);
               }
           }).catch((err)=>{
               console.error("歌曲url获取失败");
@@ -91,7 +92,8 @@ export default {
       })
       .catch(err => {
           console.error(err); 
-      })
+      }),
+      this.musicurl=window.localStorage.getItem('url');
     },
     components:{
         heads
